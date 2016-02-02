@@ -108,7 +108,7 @@ PDFImage.prototype = {
             });
           }
           console.log(outputImagePath,pageNumber);
-          return resolve(outputImagePath,pageNumber);
+          return resolve({outputImagePath:outputImagePath,pageNumber:pageNumber});
         });
       }
 
@@ -145,7 +145,7 @@ PDFImage.prototype = {
             return;
           }
           console.log(outputImagePath,pageNumber);
-          return resolve(outputImagePath,pageNumber);
+          return resolve({outputImagePath:outputImagePath,pageNumber:pageNumber});
         });
       });
     });
