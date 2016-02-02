@@ -107,7 +107,7 @@ PDFImage.prototype = {
               stderr: stderr
             });
           }
-          return resolve(outputImagePath);
+          return resolve(outputImagePath,pageNumber);
         });
       }
 
@@ -144,7 +144,7 @@ PDFImage.prototype = {
             return;
           }
 
-          return resolve(outputImagePath);
+          return resolve(outputImagePath,pageNumber);
         });
       });
     });
